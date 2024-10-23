@@ -1,1 +1,6 @@
 .env
+README.md
+Makefile
+.gitignore
+.idea
+.git
