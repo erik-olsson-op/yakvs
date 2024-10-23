@@ -16,9 +16,18 @@ import (
 func Init(wg *sync.WaitGroup) {
 	defer wg.Done()
 	http.HandleFunc("/execute", executeHandler)
+	http.HandleFunc("/health", healthHandler)
 	addr := fmt.Sprintf(":%v", viper.Get("HTTP_PORT"))
 	logger.Logger.Infof("HTTP server is running on port %v", addr)
 	log.Fatal(http.ListenAndServe(addr, nil))
+}
+
+func healthHandler(w http.ResponseWriter, r *http.Request) {
+	if r.Method != http.MethodGet {
+		http.Error(w, "Invalid request method only GET", http.StatusMethodNotAllowed)
+		return
+	}
+	w.WriteHeader(http.StatusOK)
 }
 
 func executeHandler(w http.ResponseWriter, r *http.Request) {
