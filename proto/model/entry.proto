@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package yakvs;
+option go_package = "github.com/erik-olsson-op/yakvs/model";
+
+message Query {
+  Keyword keyword = 1;
+  optional Entry entry = 2;
+}
+
+enum Keyword {
+  SET = 0;
+  GET = 1;
+}
+
+message Entry {
+  string key = 1;
+  bytes value = 2;
+}
+
+message Response {
+  bytes value = 1;
+}
+
+service YakvsGrpc {
+  rpc Execute(Query) returns (Response);
+}

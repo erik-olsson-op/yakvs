@@ -1,0 +1,23 @@
+### GRPC - Get key
+GRPC localhost:8081/yakvs.YakvsGrpc/Execute
+Content-Type: application/grpc
+
+{
+  "keyword": "GET",
+  "entry": {
+    "key": "key",
+    "value": ""
+  }
+}
+
+### GRPC - Set key - base64
+GRPC localhost:8081/yakvs.YakvsGrpc/Execute
+Content-Type: application/grpc
+
+{
+  "keyword": "SET",
+  "entry": {
+    "key": "key",
+    "value": "SGVsbG8sIFdvcmxkIQ=="
+  }
+}

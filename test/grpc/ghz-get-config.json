@@ -1,0 +1,15 @@
+{
+  "proto": "<PATH TO PROTO>/entry.proto",
+  "call": "yakvs.YakvsGrpc/Execute",
+  "data": {
+    "keyword": "GET",
+    "entry": {
+      "key": "key",
+      "value": ""
+    }
+  },
+  "host": "localhost:8081",
+  "insecure": true,
+  "concurrency": 50,
+  "total": 1000
+}

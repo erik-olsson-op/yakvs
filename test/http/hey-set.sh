@@ -1,0 +1,1 @@
+hey -n 1000 -c 50 -m POST -H "Content-Type: application/json" -D ./query-set.json http://localhost:8080/execute

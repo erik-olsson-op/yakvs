@@ -1,0 +1,1 @@
+ghz --config=./ghz-get-config.json

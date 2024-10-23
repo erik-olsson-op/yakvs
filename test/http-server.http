@@ -1,0 +1,30 @@
+#SET = 0;
+#GET = 1;
+
+### POST set key
+POST http://localhost:8080/execute
+Content-Type: application/json
+
+{
+  "keyword": 0,
+  "entry": {
+    "key": "key",
+    "value": "SGVsbG8sIFdvcmxkIQ=="
+  }
+}
+
+###
+
+### POST get key
+POST http://localhost:8080/execute
+Content-Type: application/json
+
+{
+  "keyword": 1,
+  "entry": {
+    "key": "key",
+    "value": ""
+  }
+}
+
+###
