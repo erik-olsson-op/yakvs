@@ -10,7 +10,7 @@ docker-build:
 
 # Push the image to public repository
 docker-push:
-	docker push erikolssonop/yakvs
+	docker push $(dockertag)
 
 # Set exposed port 8080 and 8081 default and pass the .env file
 docker-run:
