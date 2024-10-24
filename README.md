@@ -10,8 +10,8 @@ Create a .env file
 
 * HTTPS_PORT=8443
 * GRPCS_PORT=7443
-* SERVER_CERT
-* SERVER_KEY
+* SERVER_CERT=x509/localhost-cert.pem
+* SERVER_KEY=x509/localhost-key.pem
 
 ## TLS
 
