@@ -1,6 +1,7 @@
 {
-  "proto": "<PATH TO PROTO>/entry.proto",
+  "proto": "/home/computer/projects/yakvs/proto/model/entry.proto",
   "call": "yakvs.YakvsGrpc/Execute",
+  "cacert": "/home/computer/projects/yakvs/x509/localhost-cert.pem",
   "data": {
     "keyword": "GET",
     "entry": {
@@ -8,8 +9,8 @@
       "value": ""
     }
   },
-  "host": "localhost:8081",
-  "insecure": true,
+  "host": "localhost:7443",
+  "rps": 100000,
   "concurrency": 50,
   "total": 1000
 }

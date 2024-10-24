@@ -1,7 +1,7 @@
 {
   "proto": "/home/computer/projects/yakvs/proto/model/entry.proto",
   "call": "yakvs.YakvsGrpc/Execute",
-  "cacert": "/home/computer/projects/yakvs/x509/cert.pem",
+  "cacert": "/home/computer/projects/yakvs/x509/localhost-cert.pem",
   "data": {
     "keyword": "SET",
     "entry": {
