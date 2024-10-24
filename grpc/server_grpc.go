@@ -8,7 +8,10 @@ import (
 	"github.com/spf13/viper"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpc/reflection"
 	"google.golang.org/grpc/status"
+	"log"
 	"net"
 	"sync"
 )
@@ -34,10 +37,14 @@ func Init(wg *sync.WaitGroup) {
 	if err != nil {
 		logger.Logger.Fatalf("failed to create listener on port:  %s - %v", port, err)
 	}
-	grpcServer := grpc.NewServer()
+	x509, err := credentials.NewServerTLSFromFile("x509/cert.pem", "x509/privatekey.pem")
+	if err != nil {
+		log.Fatalf("failed to create credentials: %v", err)
+	}
+	grpcServer := grpc.NewServer(grpc.Creds(x509))
 	model.RegisterYakvsGrpcServer(grpcServer, &server{})
-	logger.Logger.Infof("GRPC server running on port: %v", port)
-	//reflection.Register(grpcServer)
+	logger.Logger.Infof("GRPCS server running on port: %v", port)
+	reflection.Register(grpcServer)
 	err = grpcServer.Serve(listener)
 	if err != nil {
 		logger.Logger.Fatalf("failed to start GRPC server on port: %s - %v", port, err)

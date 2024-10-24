@@ -8,7 +8,6 @@ import (
 	"github.com/erik-olsson-op/yakvs/model"
 	"github.com/spf13/viper"
 	"io"
-	"log"
 	"net/http"
 	"sync"
 )
@@ -17,9 +16,12 @@ func Init(wg *sync.WaitGroup) {
 	defer wg.Done()
 	http.HandleFunc("/execute", executeHandler)
 	http.HandleFunc("/health", healthHandler)
-	addr := fmt.Sprintf(":%v", viper.Get("HTTP_PORT"))
-	logger.Logger.Infof("HTTP server is running on port %v", addr)
-	log.Fatal(http.ListenAndServe(addr, nil))
+	addr := viper.GetString("HTTPS_PORT")
+	logger.Logger.Infof("HTTPS server is running on port %v", addr)
+	err := http.ListenAndServeTLS(":"+addr, "x509/cert.pem", "x509/privatekey.pem", nil)
+	if err != nil {
+		logger.Logger.Fatal(err)
+	}
 }
 
 func healthHandler(w http.ResponseWriter, r *http.Request) {
@@ -57,6 +59,7 @@ func executeHandler(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	_, err = w.Write(response.Value)
 	if err != nil {
+		http.Error(w, fmt.Sprintf("ERR: %v", err), http.StatusBadRequest)
 		return
 	}
 }
