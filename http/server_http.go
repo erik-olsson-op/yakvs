@@ -18,7 +18,9 @@ func Init(wg *sync.WaitGroup) {
 	http.HandleFunc("/health", healthHandler)
 	addr := viper.GetString("HTTPS_PORT")
 	logger.Logger.Infof("HTTPS server is running on port %v", addr)
-	err := http.ListenAndServeTLS(":"+addr, "x509/cert.pem", "x509/privatekey.pem", nil)
+	cert := viper.GetString("SERVER_CERT")
+	key := viper.GetString("SERVER_KEY")
+	err := http.ListenAndServeTLS(fmt.Sprintf(":%s", addr), cert, key, nil)
 	if err != nil {
 		logger.Logger.Fatal(err)
 	}

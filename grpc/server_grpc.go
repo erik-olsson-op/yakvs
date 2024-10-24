@@ -2,6 +2,7 @@ package grpc
 
 import (
 	"context"
+	"fmt"
 	"github.com/erik-olsson-op/yakvs/engine"
 	"github.com/erik-olsson-op/yakvs/logger"
 	"github.com/erik-olsson-op/yakvs/model"
@@ -32,12 +33,14 @@ func (s *server) Execute(ctx context.Context, q *model.Query) (*model.Response, 
 
 func Init(wg *sync.WaitGroup) {
 	defer wg.Done()
-	port := viper.Get("GRPC_PORT")
-	listener, err := net.Listen("tcp", ":"+port.(string))
+	port := viper.GetString("GRPCS_PORT")
+	listener, err := net.Listen("tcp", fmt.Sprintf(":%s", port))
 	if err != nil {
 		logger.Logger.Fatalf("failed to create listener on port:  %s - %v", port, err)
 	}
-	x509, err := credentials.NewServerTLSFromFile("x509/cert.pem", "x509/privatekey.pem")
+	cert := viper.GetString("SERVER_CERT")
+	key := viper.GetString("SERVER_KEY")
+	x509, err := credentials.NewServerTLSFromFile(cert, key)
 	if err != nil {
 		log.Fatalf("failed to create credentials: %v", err)
 	}
