@@ -14,4 +14,4 @@ docker-push:
 
 # Set exposed port 8080 and 8081 default and pass the .env file
 docker-run:
-	docker run --env-file .env -it --rm -p 8080:8080 -p 8081:8081 $(dockertag)
+	docker run --env-file .env -it --rm -p 8443:8443 -p 7433:7443 $(dockertag)

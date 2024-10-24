@@ -5,7 +5,7 @@ COPY . .
 RUN go mod download && go mod verify
 RUN go build -v -o api
 
-EXPOSE 8080
-EXPOSE 8081
+EXPOSE 8443
+EXPOSE 7443
 
 CMD ["./api"]
