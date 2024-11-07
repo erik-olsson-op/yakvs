@@ -1,5 +1,6 @@
 #SET = 0;
 #GET = 1;
+#DELETE = 2;
 
 ### POST set key
 POST https://localhost:8443/execute
@@ -21,6 +22,20 @@ Content-Type: application/json
 
 {
   "keyword": 1,
+  "entry": {
+    "key": "key",
+    "value": ""
+  }
+}
+
+###
+
+### POST delete key
+POST https://localhost:8443/execute
+Content-Type: application/json
+
+{
+  "keyword": 2,
   "entry": {
     "key": "key",
     "value": ""
