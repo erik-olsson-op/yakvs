@@ -1,0 +1,658 @@
+{
+  "date": "2024-11-07T13:03:59+01:00",
+  "endReason": "normal",
+  "options": {
+    "call": "yakvs.YakvsGrpc/Execute",
+    "host": "localhost:7443",
+    "proto": "/home/computer/projects/yakvs/proto/model/entry.proto",
+    "import-paths": [
+      "/home/computer/projects/yakvs/proto/model",
+      "."
+    ],
+    "cacert": "/home/computer/projects/yakvs/x509/localhost-cert.pem",
+    "insecure": false,
+    "rps": 1000,
+    "load-schedule": "const",
+    "load-start": 0,
+    "load-end": 0,
+    "load-step": 0,
+    "load-step-duration": 0,
+    "load-max-duration": 0,
+    "concurrency": 100,
+    "concurrency-schedule": "const",
+    "concurrency-start": 1,
+    "concurrency-end": 0,
+    "concurrency-step": 0,
+    "concurrency-step-duration": 0,
+    "concurrency-max-duration": 0,
+    "total": 100,
+    "connections": 1,
+    "timeout": 20000000000,
+    "dial-timeout": 10000000000,
+    "data": {
+      "entry": {
+        "key": "key",
+        "value": ""
+      },
+      "keyword": "DELETE"
+    },
+    "binary": false,
+    "CPUs": 22
+  },
+  "count": 100,
+  "total": 100797409,
+  "average": 11721,
+  "fastest": 0,
+  "slowest": 0,
+  "rps": 992.0889930811614,
+  "errorDistribution": {
+    "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"": 100
+  },
+  "statusCodeDistribution": {
+    "Unavailable": 100
+  },
+  "latencyDistribution": null,
+  "histogram": null,
+  "details": [
+    {
+      "timestamp": "2024-11-07T13:03:59.207392381+01:00",
+      "latency": 33573,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.20758479+01:00",
+      "latency": 16193,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.208925363+01:00",
+      "latency": 14045,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.209794632+01:00",
+      "latency": 11578,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.21100509+01:00",
+      "latency": 5239,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.212315638+01:00",
+      "latency": 15277,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.213508395+01:00",
+      "latency": 11998,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.213585243+01:00",
+      "latency": 6952,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.214617778+01:00",
+      "latency": 11808,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.215792027+01:00",
+      "latency": 10403,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.216988385+01:00",
+      "latency": 11314,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.218650198+01:00",
+      "latency": 10014,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.218652847+01:00",
+      "latency": 7066,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.219677832+01:00",
+      "latency": 12200,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.221488446+01:00",
+      "latency": 11636,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.221572752+01:00",
+      "latency": 7931,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.222696794+01:00",
+      "latency": 8703,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.223852981+01:00",
+      "latency": 11840,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.224949677+01:00",
+      "latency": 10130,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.226103994+01:00",
+      "latency": 11693,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.227218673+01:00",
+      "latency": 10773,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.228396009+01:00",
+      "latency": 20444,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.229495021+01:00",
+      "latency": 10994,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.229579655+01:00",
+      "latency": 7542,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.230607806+01:00",
+      "latency": 10760,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.231752353+01:00",
+      "latency": 12502,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.233310236+01:00",
+      "latency": 14909,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.234442409+01:00",
+      "latency": 13378,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.234538046+01:00",
+      "latency": 7558,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.235574128+01:00",
+      "latency": 12479,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.236695044+01:00",
+      "latency": 6373,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.238253706+01:00",
+      "latency": 20771,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.239836117+01:00",
+      "latency": 22503,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.239899114+01:00",
+      "latency": 7985,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.241059361+01:00",
+      "latency": 13003,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.242689016+01:00",
+      "latency": 12153,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.242746791+01:00",
+      "latency": 6496,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.243947348+01:00",
+      "latency": 12246,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.245192469+01:00",
+      "latency": 15796,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.247073211+01:00",
+      "latency": 14241,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.247602066+01:00",
+      "latency": 10781,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.248002749+01:00",
+      "latency": 9034,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.248624505+01:00",
+      "latency": 12524,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.250713642+01:00",
+      "latency": 15260,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.250777977+01:00",
+      "latency": 8242,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.252006198+01:00",
+      "latency": 12835,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.25313335+01:00",
+      "latency": 12982,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.254268057+01:00",
+      "latency": 11331,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.255495693+01:00",
+      "latency": 12423,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.255569452+01:00",
+      "latency": 7270,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.25660759+01:00",
+      "latency": 11555,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.257732033+01:00",
+      "latency": 11984,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.258883812+01:00",
+      "latency": 12110,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.260014417+01:00",
+      "latency": 13240,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.26120449+01:00",
+      "latency": 13007,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.262404405+01:00",
+      "latency": 11883,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.263529919+01:00",
+      "latency": 10070,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.263554402+01:00",
+      "latency": 12350,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.26474715+01:00",
+      "latency": 11175,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.265918031+01:00",
+      "latency": 9446,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.267094915+01:00",
+      "latency": 9408,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.268277283+01:00",
+      "latency": 12055,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.26940328+01:00",
+      "latency": 4643,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.270562313+01:00",
+      "latency": 10603,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.270575561+01:00",
+      "latency": 11779,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.271763338+01:00",
+      "latency": 11777,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.273075507+01:00",
+      "latency": 11251,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.274241678+01:00",
+      "latency": 11392,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.27540064+01:00",
+      "latency": 10010,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.277441461+01:00",
+      "latency": 18892,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.277445865+01:00",
+      "latency": 19335,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.277711129+01:00",
+      "latency": 11647,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.278906667+01:00",
+      "latency": 11597,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.279697831+01:00",
+      "latency": 11416,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.281162137+01:00",
+      "latency": 11489,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.282437519+01:00",
+      "latency": 11835,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.282805881+01:00",
+      "latency": 9555,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.283706445+01:00",
+      "latency": 11442,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.284848565+01:00",
+      "latency": 13215,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.286061376+01:00",
+      "latency": 11142,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.287207561+01:00",
+      "latency": 10803,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.288375045+01:00",
+      "latency": 10578,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.289562368+01:00",
+      "latency": 11400,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.289606908+01:00",
+      "latency": 12167,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.290759894+01:00",
+      "latency": 10648,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.291908143+01:00",
+      "latency": 15769,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.293038654+01:00",
+      "latency": 11350,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.294217768+01:00",
+      "latency": 11181,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.295327438+01:00",
+      "latency": 8442,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.296435093+01:00",
+      "latency": 8138,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.296549057+01:00",
+      "latency": 11664,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.297556647+01:00",
+      "latency": 9160,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.298676345+01:00",
+      "latency": 8250,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.2998312+01:00",
+      "latency": 7805,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.300986727+01:00",
+      "latency": 9977,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.302109573+01:00",
+      "latency": 7540,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.303238902+01:00",
+      "latency": 8552,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.30489924+01:00",
+      "latency": 18688,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.305128382+01:00",
+      "latency": 12265,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    },
+    {
+      "timestamp": "2024-11-07T13:03:59.306186329+01:00",
+      "latency": 11291,
+      "error": "rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial tcp 127.0.0.1:7443: connect: connection refused\"",
+      "status": "Unavailable"
+    }
+  ]
+}

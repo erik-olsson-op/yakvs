@@ -1,0 +1,1 @@
+ghz --config=./get-config.toml

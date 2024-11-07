@@ -1,0 +1,14 @@
+total = 100
+concurrency = 100
+rps = 1000
+proto = "/home/computer/projects/yakvs/proto/model/entry.proto"
+call = "yakvs.YakvsGrpc/Execute"
+cacert = "/home/computer/projects/yakvs/x509/localhost-cert.pem"
+host = "localhost:7443"
+#output = "benchmark/grpc-set.json"
+#format = "pretty"
+
+[data]
+keyword = "SET"
+entry.key = "key"
+entry.value = "SGVsbG8sIFdvcmxkIQ==" # Hello, World!
