@@ -15,3 +15,13 @@ docker-push:
 # Set exposed port 8080 and 8081 default and pass the .env file
 docker-run:
 	docker run --env-file .env -it --rm -p 8443:8443 -p 7433:7443 $(dockertag)
+
+benchmark-http:
+	cd test/http && ./set.sh
+	cd test/http && ./get.sh
+	cd test/http && ./delete.sh
+
+benchmark-grpc:
+	cd test/grpc && ./set.sh
+	cd test/grpc && ./get.sh
+	cd test/grpc && ./delete.sh

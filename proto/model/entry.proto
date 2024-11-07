@@ -11,6 +11,7 @@ message Query {
 enum Keyword {
   SET = 0;
   GET = 1;
+  DELETE = 2;
 }
 
 message Entry {

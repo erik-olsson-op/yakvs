@@ -17,9 +17,9 @@ Create a .env file
 
 * Generated self-signed cert for 7 days for localhost
 
-`
+``` bash
 openssl req -x509 -newkey rsa:4096 -keyout x509/localhost-key.pem -out x509/localhost-cert.pem -days 7 -nodes -subj "/CN=localhost" -addext "subjectAltName=DNS:localhost"
-`
+```
 
 ## Tools
 
